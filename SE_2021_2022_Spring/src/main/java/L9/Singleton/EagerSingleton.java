@@ -2,21 +2,23 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package L7.LiskovSubsitution;
+package L9.Singleton;
 
 /**
  *
  * @author ali.nizam
  */
-public class Employee extends Person{
-    int salary;
+public class EagerSingleton {
+    private static EagerSingleton instance;
 
-    public int getSalary() {
-        return salary;
+    public static EagerSingleton getInstance() {
+        return instance;
+    }
+    private EagerSingleton() {
     }
     
-    public String getTravelType() {
-        throw new UnsupportedOperationException("Not supported yet.");
+    static{
+        instance=new EagerSingleton();
     }
     
 }

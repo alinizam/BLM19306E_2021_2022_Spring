@@ -2,18 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package L7.LiskovSubsitution;
+package L9.Factory;
 
 /**
  *
  * @author ali.nizam
  */
-public class Test {
+public class FactoryTest {
     public static void main(String[] args) {
-        Employee e=new Employee();
-        Person p=e;
-        p.getLastName();
-        p.getTravelType();
-       
+        System.out.println(ProductFactory.getProduct("Car"));
     }
 }

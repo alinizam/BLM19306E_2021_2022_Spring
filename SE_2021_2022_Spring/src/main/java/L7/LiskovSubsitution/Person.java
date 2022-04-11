@@ -10,6 +10,7 @@ package L7.LiskovSubsitution;
  */
 public class Person {
     String firstName,LastName;
+    String travelType;
 
     public  String getFirstName() {
         return firstName;
@@ -18,5 +19,13 @@ public class Person {
     public String getLastName() {
         return LastName;
     }
+
+    public String getTravelType() {
+        return travelType;
+    }
+    
+    
+    
+    
     
 }

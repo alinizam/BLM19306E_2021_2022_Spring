@@ -2,18 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package L7.LiskovSubsitution;
+package L9.InterfaceSegregationBad;
 
 /**
  *
  * @author ali.nizam
  */
-public class Test {
-    public static void main(String[] args) {
-        Employee e=new Employee();
-        Person p=e;
-        p.getLastName();
-        p.getTravelType();
-       
-    }
+public abstract class Living implements IAbility{
+    
 }
