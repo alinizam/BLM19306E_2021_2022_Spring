@@ -10,8 +10,8 @@ package L12.ChainOfResponsibility;
  */
 public class TestClient {
     public static void main(String[] args) {
-        Handler c=new GeneralManager(new Employee(new Manager(null)));
+        Handler chain=new GeneralManager(new Employee(new Manager(null)));
         Request r=new Request("Task",5000);
-        c.handleRequest(r);
+        chain.handleRequest(r);
     }
 }
